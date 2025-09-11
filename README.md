@@ -1,17 +1,40 @@
-Gold Hunter Game by Rooqidev..
+# Gold Hunter 🎮
 
-About this game:
+**Gold Hunter** is my first vanilla JavaScript game project.  
+It’s a simple 2D browser game where the player collects coins, avoids enemies, and tries to score as high as possible.  
 
-• Player has to collect all the gold coins while avoiding the enemies moving left to right around gold coins...
-• Coins will reappear & player will get one extra life if it has collected all the four coins within that 3 lives.
+---
+
+## 🚀 Live Demo
+👉 [Play the Game Here](https://rooqidev.github.io/Gold-Hunter-Game-by-RooqiDev/)  
+
+---
+
+## 💻 Features
+- Built with **HTML, CSS, and JavaScript** only  
+- Collision detection for walls, coins, and enemies  
+- Simple controls (buttons)  
+- Fun and lightweight gameplay  
+
+---
+
+## 🎮 How to Play
+1. Move your player around the map.  
+2. Collect coins to increase your score.  
+3. Avoid enemies — hitting one ends the game.  
+4. Try to collect as much gold as you can!  
+
+---
+
+## 📂 Project Structure
+
+---
+
+## 🛠️ Future Improvements
+- Add desktop controls
 
 
+---
 
-
-Pros,
-#Mobile First game, 
-#Available with mobile controls,
-#Natural Sounds, created using Mobile recording,
-
-Cons,
-#Available in desktop but with mobile controls, it doesn't support keyboard arrows (can be added in future) why? i done everything using mobile..
+## 🔗 Repo
+[View the Code on GitHub](https://github.com/rooqidev/gold-hunter)
