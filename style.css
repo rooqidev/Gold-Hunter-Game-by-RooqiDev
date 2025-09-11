@@ -1,0 +1,342 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .container {
+        position: absolute;
+        height: 625px;
+        width: 360px;
+        border-radius: 10px;
+        background: #FF9D17;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow: hidden;
+    }
+    
+    .gold_hunter-game {
+        position: absolute;
+        height: 525px;
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        visibility: hidden;
+    }
+    
+    .wall {
+        position: absolute;
+        height: 5px;
+        width: 250px;
+        background: black;
+        border-top-right-radius: 55%;
+        border-top-left-radius: 55%;
+        box-shadow: 0 3px 7px #1D1D1D;
+    }
+    
+    #wall1 {
+        position: absolute;
+        top: 55px;
+        left: 55px;
+    }
+    
+    #wall2 {
+        position: absolute;
+        left: 50px;
+        top: 130px;
+        height: 250px;
+        width: 5px;
+    }
+    
+    #wall3 {
+        position: absolute;
+        right: 50px;
+        top: 130px;
+        height: 250px;
+        width: 5px;
+    }
+    
+    #wall4 {
+        width: 135px;
+        position: absolute;
+        top: 155px;
+        right: 115px;
+    }
+    
+    #wall5 {
+        
+        width: 135px;
+        position: absolute;
+        top: 335px;
+        right: 115px;
+    }
+    
+    #wall6 {
+        
+        width: 250px;
+        position: absolute;
+        top: 455px;
+        right: 50px;
+    }
+    
+    .btns {
+        position: absolute;
+        bottom: 0;
+        height: 100px;
+        width: 360px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        visibility: hidden;
+    }
+    
+    button {
+        background: #000000;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 3px 9px #505050;
+    }
+    
+    .controls {
+        height: 100px;
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .left-right {
+        display: flex;
+    }
+    
+    .up-down {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .left,
+    .right {
+        padding: 9px 18px;
+        
+    }
+    
+    .up,
+    .down {
+        padding: 18px 9px;
+    }
+    
+    .left-right {
+        display: flex;
+        justify-content: space-between;
+        width: 75px;
+    }
+    
+    .up-down {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 75px;
+    }
+    
+    .player {
+        position: absolute;
+        left: 170px;
+        top: 490px;
+        height: 25px;
+        width: 25px;
+        background: black;
+        z-index: 1;
+        border-top-right-radius: 55%;
+        border-top-left-radius: 55%;
+        border-bottom-right-radius: 15%;
+        border-bottom-left-radius: 15%;
+        box-shadow: 0 2px 8px #000000;
+    }
+    
+    .enemy {
+        height: 25px;
+        width: 25px;
+        background: linear-gradient(#FF0000, #5A0000);
+        z-index: 1;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px #1F0A0A;
+    }
+    
+    .gold {
+        height: 25px;
+        width: 25px;
+        background: linear-gradient(#FFF841, #F8A823);
+        box-shadow: 0 2px 8px #6A5900;
+        z-index: 0;
+        border-radius: 50%;
+        animation: rotation 7s ease infinite;
+    }
+    /*  coins rotation Animation*/
+    @keyframes rotation {
+        0% {}
+        
+        50% {
+            transform: rotateY(75deg);
+        }
+        
+        60% {
+            transform: rotateY(150deg);
+        }
+        
+        100% {}
+        
+    }
+    
+    #enemy1 {
+        position: absolute;
+        top: 15px;
+        left: 30px;
+    }
+    
+    #enemy2 {
+        position: absolute;
+        left: 15px;
+        top: 115px;
+    }
+    
+    #enemy3 {
+        position: absolute;
+        right: 15px;
+        bottom: 115px;
+    }
+    
+    #enemy4 {
+        position: absolute;
+        top: 125px;
+        right: 110px;
+    }
+    
+    #gold1 {
+        position: absolute;
+        top: 15px;
+        left: 160px;
+    }
+    
+    #gold2 {
+        position: absolute;
+        left: 15px;
+        top: 250px;
+    }
+    
+    #gold3 {
+        position: absolute;
+        right: 15px;
+        bottom: 260px;
+    }
+    
+    #gold4 {
+        position: absolute;
+        top: 125px;
+        right: 165px;
+    }
+    
+    .gold-coins {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    
+    .lives {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    
+    .gold-coins2 {
+        position: absolute;
+        top: 300px;
+        left: 110px;
+        font-size: 20px;
+        font-weight: bold;
+        visibility: hidden;
+    }
+    
+    .lives2 {
+        position: absolute;
+        top: 350px;
+        right: 150px;
+        font-size: 25px;
+        font-weight: bold;
+        visibility: hidden;
+    }
+    
+    .game-name {
+        position: absolute;
+        font-weight: bold;
+        font-size: 75px;
+        top: 85px;
+        left: 50px;
+    }
+    .game-name.Actiiv {
+        animation: Attract 3s ease;
+    }
+    
+    .Start {
+        font-size: 25px;
+        position: absolute;
+        font-weight: bold;
+        font-size: 40px;
+        top: 400px;
+        left: 100px;
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+    
+    /* Game name moving animation after every 5 sec*/
+    @keyframes Attract {
+        0% {}
+        
+        45% {
+            transform: rotate(15deg);
+        }
+        
+        55% {
+            transform: rotate(-5deg);
+        }
+        
+        100% {}
+    }
+        /* Game desktop view*/
+    @media (width> 600px) {
+        .container {
+            width: 100%;
+        }
+        
+        .game-name {
+            top: 200px;
+            left: 300px;
+        }
+        
+        .Start {
+            top: 300px;
+            left: 400px;
+        }
+        
+        .gold_hunter-game {
+            border: 2px solid black;
+            top: 0px;
+            left: 300px;
+            border-radius: 15px;
+            box-shadow: 0 4px 9px #513706;
+        }
+        
+        .btns {
+            left: 300px;
+        }
+    }
