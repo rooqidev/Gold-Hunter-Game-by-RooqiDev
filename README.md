@@ -37,4 +37,4 @@ It’s a simple 2D browser game where the player collects coins, avoids enemies,
 ---
 
 ## 🔗 Repo
-[View the Code on GitHub](https://github.com/rooqidev/gold-hunter)
+[View the Code on GitHub](https://github.com/rooqidev/Gold-Hunter-Game-by-RooqiDev)
