@@ -294,3 +294,11 @@ let walking = new Audio("/Walking.mp3");
       
       document.querySelector(".lives").innerHTML = `${l.join("  ")}`;
     }
+    document.addEventListener("keydown", function (event){
+      if(event.key === "w" || event.key === "ArrowUp") movePlayer(0, -15);
+      if(event.key === "s" || event.key === "ArrowDown") movePlayer(0, 15)
+      if(event.key === "a" || event.key === "ArrowLeft") movePlayer(-15, 0);
+      if(event.key === "d" || event.key === "ArrowRight") movePlayer(15, 0);
+    
+    }
+    );

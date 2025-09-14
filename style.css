@@ -5,16 +5,21 @@
         font-family: 'Times New Roman', Times, serif;
     }
     
+    body {
+        background: #FF9D17;
+    }
+    
     .container {
+        margin-top: 7px;
         position: absolute;
         height: 625px;
         width: 360px;
         border-radius: 10px;
-        background: #FF9D17;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         overflow: hidden;
+        box-shadow: 0 3px 7px #1D1D1D;
     }
     
     .gold_hunter-game {
@@ -27,6 +32,7 @@
         align-items: center;
         border: none;
         visibility: hidden;
+        
     }
     
     .wall {
@@ -92,14 +98,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid black;
         visibility: hidden;
     }
     
     button {
         background: #000000;
         border: none;
-        border-radius: 10px;
         box-shadow: 0 3px 9px #505050;
     }
     
@@ -112,7 +116,9 @@
     }
     
     .left-right {
+        width: 125px;
         display: flex;
+        justify-content: space-between;
     }
     
     .up-down {
@@ -122,13 +128,21 @@
     
     .left,
     .right {
-        padding: 9px 18px;
-        
+        padding: 20px 30px;
+        margin: 5px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 20px;
     }
     
     .up,
     .down {
-        padding: 18px 9px;
+        padding: 18px 20px;
+        margin-bottom: 7px;
+        font-size: 25px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
     }
     
     .left-right {
@@ -177,6 +191,7 @@
         border-radius: 50%;
         animation: rotation 7s ease infinite;
     }
+    
     /*  coins rotation Animation*/
     @keyframes rotation {
         0% {}
@@ -282,6 +297,7 @@
         top: 85px;
         left: 50px;
     }
+    
     .game-name.Actiiv {
         animation: Attract 3s ease;
     }
@@ -312,7 +328,8 @@
         
         100% {}
     }
-        /* Game desktop view*/
+    
+    /* Game desktop view*/
     @media (width> 600px) {
         .container {
             width: 100%;
@@ -330,13 +347,14 @@
         
         .gold_hunter-game {
             border: 2px solid black;
-            top: 0px;
+            top: 50px;
             left: 300px;
             border-radius: 15px;
             box-shadow: 0 4px 9px #513706;
         }
         
         .btns {
+            display: none;
             left: 300px;
         }
     }
