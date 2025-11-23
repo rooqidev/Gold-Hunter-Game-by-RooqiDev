@@ -2,11 +2,12 @@
 
 It is my first vanilla JS game project. It’s a simple 2D browser game where the player collects coins, avoids enemies, and tries to score as high as possible.  
 
-"Keyboard Support Added"
+*Keyboard Support Added
 
 * Press Enter for Starting the Match
 * Press ArrowKeys for Moving around Walls
-## 🚀 Live Demo
+
+🚀 Live Demo
 👉 [Play the Game Here](https://rooqidev.github.io/Gold-Hunter-Game-by-RooqiDev/)  
 
 ## 💻 Features
